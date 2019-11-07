@@ -1,0 +1,6 @@
+Web -> html/Css  |  Desktop -> Java
+servidor -> PHP
+
+
+-> Projeto - Web -> HTML/CSS
+	   - Servidor - Banco e API PHP/Java
