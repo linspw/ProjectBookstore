@@ -4,3 +4,28 @@ servidor -> PHP
 
 -> Projeto - Web -> HTML/CSS
 	   - Servidor - Banco e API PHP/Java
+
+
+
+
+Trabalho de prog. 
+
+OBJETIVO: 
+- Cadastro funcionário 
+- Cadastro produto 
+- Entrada de estoque 
+- Caixa para vendas 
+- Editar dados funcionários 
+- Editar dados do produto 
+- Gráfico de vendas 12 meses 
+- Relatório produtos vendidos mês/dia/últimos 7 dias 
+- Listar todos os produtos 
+- Listar todos os produtos vendidos por funcionário. 
+
+Cadastrar e alterar: JAVA
+Listar, editar, excluir: PHP 
+
+O QUE SERÁ EXIGIDO: 
+- Mostrar como é a arquitetura da prog.
+- O funcionamento 
+- Pergunta individual: quem não responder, zera...
