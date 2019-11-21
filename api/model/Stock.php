@@ -71,13 +71,28 @@
             }
             $stmt->close();
         }
-        public function listAllProducts(){
-            $sql ="SELECT * FROM `product`";
+        public function listAllOrder(){
+            $sql ="SELECT * FROM `order_buy_temp`";
             $result = $this->connection->query($sql);
             if($result->num_rows > 0){
+                $r = array();
                 while($row = $result->fetch_assoc()) {
-                    echo "<p>COD_PDT: " . $row["COD_PDT"]. " - Name: " . $row["name"]. " " . $row["description"]. " " . $row["value"].  "</p>";
+                    $r[] = $row;    
                 }
+                print json_encode($r);
+            }else {
+                echo "0 results";
+            }
+        }
+        public function listAllStock(){
+            $sql = "SELECT * FROM `stock`";
+            $result = $this->connection->query($sql);
+            if($result->num_rows > 0){
+                $r = array();
+                while($row = $result->fetch_assoc()) {
+                    $r[] = $row;    
+                }
+                print json_encode($r);
             }else {
                 echo "0 results";
             }

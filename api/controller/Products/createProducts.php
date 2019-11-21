@@ -1,7 +1,9 @@
 <?php
     include_once("../../model/Products.php");
     
-    $produto = new Products();
-    $produto->create_product("A grande Aventura Masculina 2", "Uma Jornada com Deus pelas alma masculina 2", 39.9);
-
+    if(isset($_POST['name']) && isset($_POST['description']) && isset($_POST['value'])){
+        //echo "VAR:::::".$_POST['name'].$_POST['description'].$_POST['value'];
+        $produto = new Products();
+        $produto->create_product($_POST['name'], $_POST['description'], $_POST['value']);
+    }
 ?>
